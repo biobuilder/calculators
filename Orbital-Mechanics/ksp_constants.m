@@ -235,7 +235,7 @@ Req_Pol = 44000;
 % Pol-Jool Parameters 
 Ra_Pol = 210624207;
 Rp_Pol = 149155794;
-e_Pol = 0.171
+e_Pol = 0.171;
 inc_Pol = 5.25*pi()/180;
 lonasc_Pol = 2*pi()/180;
 Torb_Pol = 901903;

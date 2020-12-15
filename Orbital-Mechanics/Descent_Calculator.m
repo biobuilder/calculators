@@ -3,19 +3,19 @@
 % Damon Printz
 % 3/13/2020
 
-clear; clc;
+clc;
 
-mu = 6.5138398E10; % gravitational parameter (m^3/s^2)
-R_orbit = 214000; % initial circular orbital radius (m)
+mu = mu_Dun; %6.5138398E10; % gravitational parameter (m^3/s^2)
+R_orbit = 60000+Req_Dun; % initial circular orbital radius (m)
 
-r_mean = 200000; % mean body radius (m)
-body_rotation_period = 9203545; % rotational period of body (s)
-landing_alt = 3000; % landing altitude (m)
+r_mean = Req_Dun; % mean body radius (m)
+body_rotation_period = Tsr_Dun; % rotational period of body (s)
+landing_alt = 0; % landing altitude (m)
 landing_lat = 0; % landing latitude (degrees)
 
 deorbit_DE_ratio = .5; % initial deorbit burn to drop change in specific energy by the given ratio
 touchdown_time = 30; % time in seconds until touchdown at landing_throttle setting 
-landing_throttle = 0.5; % landing throttle setting (0 to 1 of peak throttle)
+landing_throttle = 1; % landing throttle setting (0 to 1 of peak throttle)
 braking_throttle = 1; % braking throttle setting (0 to 1 of peak throttle)
 deorbit_throttle = 1; % deorbiting throttle setting (0 to 1 of peak throttle)
 Tacc = 1*9.81; % rocket acceleration at full thrust (m/s^2)

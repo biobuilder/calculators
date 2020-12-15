@@ -5,23 +5,23 @@
 
 % outputs: DV change, reduction in apoapsis, peak G's, average G's
 % average specific energy dissapation per second per square meter 
-clc; clear; close all;
+clc; close all;
 
 
 % environment constants
-mu = 3.5316E12; % gravitational constant (m^3/s^2)
-Rb = 600000; % mean radius of body (m)
-atmosAlt = 70000; % maximum altitude of atmosphere(m)
-planet = 'k'; % determines which planet atmosphere to call on
+mu = mu_Dun; % gravitational constant (m^3/s^2)
+Rb = Req_Dun; % mean radius of body (m)
+atmosAlt = 50000; % maximum altitude of atmosphere(m)
+planet = 'd'; % determines which planet atmosphere to call on
 
 % input orbital elements
 % periapsis is the predicted dip point 
-Rp = 630000; % periapsis (m)
+Rp = Req_Dun+20000; % periapsis (m)
 Ra = 12000000; % apoapsis (m)
 
 % input craft dimensions
-mRocket = 840+500+1000+130+40+300+250+100 % mass of the rocket (kg)
-diameter = 1.25; % diameter of the ship (m)
+mRocket = 24000; % mass of the rocket (kg)
+diameter = 2.5; % diameter of the ship (m)
 length = 8; % length of the ship (m)
 % orientation is the entry angle from the ship longitudinal axis 
 % 90 degrees = sideways, 0 degrees = head on
